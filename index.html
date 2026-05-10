@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirajan Awasthi - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+            --accent: #3b82f6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--dark);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding-left: 5px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background: var(--dark);
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+            .container { padding: 20px; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Nirajan Awasthi</h1>
+        <div class="contact-info">
+            <span>📍 Lalitpur, Nepal</span>
+            <span>📞 9762311348</span>
+            <span>✉️ nirajanawasthi936@gmail.com</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Career Objective</h2>
+        <p>To obtain a Frontend Developer position where I can utilize my skills in JavaScript, HTML/CSS, and basic Python to build responsive and user-friendly web applications.</p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5 & CSS3</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>Git & GitHub</li>
+            <li>UI/UX Principles</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="card">
+            <h3>BSc. CSIT</h3>
+            <span class="date">Patan Multiple Campus | 6th Semester</span>
+            <p>Focusing on Computer Science and Information Technology.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <span class="date">JavaScript</span>
+                <p>Built a responsive website featuring a dynamic project showcase and contact form.</p>
+            </div>
+            <div class="card">
+                <h3>Student Record System</h3>
+                <span class="date">Python + MySQL</span>
+                <p>Developed a CLI-based CRUD system to manage student data efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <p><strong>Nepali:</strong> Fluent | <strong>English:</strong> Intermediate | <strong>Hindi:</strong> Intermediate</p>
+    </section>
+</div>
+
+</body>
+</html>
